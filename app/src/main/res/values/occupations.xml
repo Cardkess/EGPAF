@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="occupations_array">
+        <item>-- Occupation --</item>
+        <item>Actor</item>
+        <item>Baker</item>
+        <item>Butcher</item>
+        <item>Carpenter</item>
+        <item>Cook</item>
+        <item>Doctor</item>
+        <item>Farmer</item>
+        <item>Fireman</item>
+        <item>Fisherman</item>
+        <item>Gardener</item>
+        <item>Hairdresser</item>
+        <item>Journalist</item>
+        <item>Judge</item>
+        <item>Lawyer</item>
+        <item>Mason</item>
+        <item>Mechanic</item>
+        <item>Nurse</item>
+        <item>Painter</item>
+        <item>Plumber</item>
+        <item>Policeman</item>
+        <item>Secretary</item>
+        <item>Singer</item>
+        <item>Soldier</item>
+        <item>Software Developer</item>
+        <item>Tailor</item>
+        <item>Taxi Driver</item>
+        <item>Teacher</item>
+        <item>Waiter</item>
+        <item>Pilot</item>
+        <item>Other</item>
+    </string-array>
+</resources>

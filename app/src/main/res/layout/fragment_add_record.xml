@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddRecordFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/addRecordProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:indeterminateOnly="true"
+                android:visibility="invisible"
+                />
+
+            <!-- TODO: Update blank fragment layout -->
+            <EditText
+                android:id="@+id/addRecordWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="Weight"
+                android:background="@drawable/input_background"
+                android:ems="10"
+                android:hint="@string/weight"
+                android:inputType="text"
+                android:padding="15dp" />
+            <EditText
+                android:id="@+id/addRecordHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="Height"
+                android:background="@drawable/input_background"
+                android:ems="10"
+                android:hint="@string/height"
+                android:inputType="text"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/addRecordTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Temp"
+                android:background="@drawable/input_background"
+                android:ems="10"
+                android:layout_marginBottom="15dp"
+                android:hint="@string/temp"
+                android:inputType="text"
+                android:padding="15dp" />
+
+            <Spinner
+                android:id="@+id/diagnosisSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/input_background"
+                android:padding="15dp"
+                android:ems="10"/>
+
+
+            <Button
+                android:id="@+id/btnAddRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:backgroundTint="@color/yellow_500"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

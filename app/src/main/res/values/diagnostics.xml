@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diagnostics_array">
+        <item>-- Diagnosis --</item>
+        <item>A00-B99</item>
+        <item>C00-D49</item>
+        <item>D50-D89</item>
+        <item>E00-E89</item>
+        <item>F01-F99</item>
+        <item>G00-G99</item>
+        <item>H00-H59</item>
+        <item>H60-H95</item>
+        <item>I00-I99</item>
+        <item>J00-J99</item>
+        <item>K00-K95</item>
+        <item>L00-L99</item>
+        <item>M00-M99</item>
+        <item>N00-N99</item>
+        <item>O00-O9A</item>
+        <item>P00-P96</item>
+        <item>Q00-Q99</item>
+        <item>R00-R99</item>
+        <item>S00-T88</item>
+        <item>U00-U85</item>
+        <item>V00-Y99</item>
+        <item>Z00-Z99 </item>
+    </string-array>
+</resources>

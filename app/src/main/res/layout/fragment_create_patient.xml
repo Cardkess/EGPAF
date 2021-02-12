@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    tools:context=".CreatePatientFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <ProgressBar
+                android:id="@+id/addPatientProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:indeterminateOnly="true"
+                android:visibility="invisible" />
+
+            <!-- TODO: Update blank fragment layout -->
+            <EditText
+                android:id="@+id/createPatientFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="First Name"
+                android:background="@drawable/input_background"
+                android:ems="10"
+                android:hint="@string/app_sign_up_first_name"
+                android:inputType="textPersonName"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/createPatientSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="Surname"
+                android:background="@drawable/input_background"
+                android:ems="10"
+                android:hint="@string/app_sign_up_surname"
+                android:inputType="textPersonName"
+                android:padding="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender: "
+                    android:textStyle="italic" />
+
+                <RadioGroup
+                    android:id="@+id/patientGenderRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/radio_button_1">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/male" />
+
+                    <RadioButton
+                        android:id="@+id/rdFemale"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/female" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/createPatientDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Date of Birth"
+                android:background="@drawable/input_background"
+                android:ems="10"
+                android:hint="@string/date_of_birth"
+                android:inputType="date"
+                android:padding="15dp" />
+
+
+            <CheckBox
+                android:id="@+id/patientEstimatedDOBCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:checked="false"
+                android:text="@string/estimated" />
+
+            <EditText
+                android:id="@+id/createPatientAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="Address"
+                android:background="@drawable/input_background"
+                android:ems="10"
+                android:hint="@string/address"
+                android:inputType="text"
+                android:padding="15dp" />
+
+            <Spinner
+                android:id="@+id/occupationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/input_background"
+                android:ems="10"
+                android:padding="15dp" />
+
+            <Button
+                android:id="@+id/btnAddPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="14dp"
+                android:backgroundTint="@color/yellow_500"
+                android:padding="15dp"
+                android:text="@string/add_patient"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
